@@ -11,6 +11,8 @@ export default class TodoItem extends React.Component {
     }
 
     handleRowSize(text) {
+        if (!text) return 0;
+
         let ar = [0, 30, 60, 90, 120, 150, 150, 180, 210, 240, 270, 300];
         let i;
         let myRowSize = ar.length;
